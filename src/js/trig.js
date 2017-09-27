@@ -1,4 +1,4 @@
-// var cos = Math.cos;
+var cos = Math.cos;
 // var sin = Math.sin;
 // function getSin(value)
 // {

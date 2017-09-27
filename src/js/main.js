@@ -19,7 +19,7 @@ let SiteGuest = class User {
 
 new SiteGuest().sayHi(); // Привет
 
-//////////////////////////////////
+
 
 class User {
   constructor(firstName, lastName) {
