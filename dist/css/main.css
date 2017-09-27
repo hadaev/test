@@ -1,0 +1,27 @@
+/* src/css/pretty.less */
+body {
+  background: #CC594A;
+  color: #B8CC24;
+}
+button {
+  background: #8BC5FF;
+  color: #6F3596;
+}
+div {
+  background: #6F3596;
+  color: #6F3596;
+}
+
+.main {
+  color: red;
+}
+.main-color {
+  color: white;
+}
+.rabbit {
+  padding: 20px;
+  border: 2px solid blue;
+}
+* {
+  box-sizing: border-box;
+}
