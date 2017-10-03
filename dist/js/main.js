@@ -1,3 +1,8 @@
+/*
+Concatinated js file 
+Author: Alex 
+Created Date: 2017-10-02
+ */ 
 $(document).ready(function () {
 	$('.carousel').carousel({
 		ride: false

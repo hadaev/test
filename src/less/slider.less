@@ -1,0 +1,95 @@
+.slider{
+  position: relative;
+  .container-fluid{
+    width: 100%;
+    .carousel-caption{
+      top: 33%;
+      z-index: 1;
+      @media (max-width: 768px) {
+        top: 22%;
+      }
+      @media (max-width: 510px) {
+        top: 24%;
+        right: 0;
+        left: 0;
+      }
+      h1{
+        .text_value(@white, 26px);
+        line-height: 22px;
+        @media (max-width: 768px) {
+          line-height: 27px;
+        }
+        @media (max-width: 510px) {
+          line-height: 30px;
+          margin-bottom: 11px;
+        }
+      }
+
+      em{
+        color: @lightgreen;
+        font-style: normal;
+      }
+      span{
+        color: @white;
+        font-size: 16px;
+        line-height: 34px;
+        @media (max-width: 510px) {
+          line-height: 25px;
+        }
+      }
+      .btn{
+        border: 2px solid @white;
+        margin: 29px auto;
+        opacity: 1;
+        .hover_animation(opacity);
+        &:hover{
+          opacity: .7;
+          color: inherit;
+          .hover_animation(opacity);
+        }
+      }
+    }
+    .carousel-control{
+      .hover_animation(opacity);
+      &:hover{
+        .hover_animation(opacity);
+      }
+      span{
+        background: url(../image/slide_arrow_next.png) no-repeat;
+        padding: 25px;
+        position: absolute;
+        top: 45%;
+      }
+      &_right{
+        right: 25px;
+      }
+      &_left{
+        left: 25px;
+        transform: rotate(180deg);
+      }
+    }
+    .carousel-indicators{
+      bottom: 11px;
+      z-index:1;
+      li{
+        width: 6px;
+        height: 6px;
+        background-color: @white;
+      }
+      .active{
+        width: 11px;
+        height: 11px;
+      }
+    }
+    .carousel-inner{
+      max-height: 523px;
+      min-height: 430px;
+      @media (max-width: 768px) {
+        max-height:431px;
+      }
+      @media (max-width: 511px) {
+        max-height: 523px;
+      }
+    }
+  }
+}

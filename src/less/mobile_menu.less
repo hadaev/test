@@ -1,0 +1,94 @@
+.mobile{
+  background-color: transparent;
+  .hover_animation(background-color);
+  &-menu{
+    position: fixed;
+    width: 0;
+    top: 0;
+    background-color: @white;
+    height: 100vh;
+    overflow: hidden;
+    z-index:5;
+    .hover_animation(width);
+    &__close{
+      background: url(../image/ico_close.png) no-repeat;
+      padding: 7px;
+      position: absolute;
+      top: 22px;
+      left: 14px;
+    }
+    &__header {
+      height: 60px;
+      background-color: #a4c894;
+      h2{
+        .text_value( @white, 20px);
+        line-height: 60px;
+        margin: 0;
+      }
+    }
+    .menu{
+      padding: 40px 0px 40px 15px;
+      width: 250px;
+      li{
+        float: none;
+        background: url("../image/ico_mobile.png") no-repeat;
+        padding-left: 34px;
+        margin-bottom: 25px;
+        &:nth-child(2){
+          background-position-y: -45px;
+        }
+        &:nth-child(3) {
+          background-position-y: -86px;
+        }
+        a{
+          color: black;
+          font-family: Acrom;
+          font-size: 14px;
+          line-height: 13px;
+          text-transform: uppercase;
+          &.menu_underline, &:hover{
+            font-family: AcromBold;
+          }
+        }
+      }
+    }
+    .line-all-width{
+      margin: 0 15px;
+      position: absolute;
+      bottom: 159px;
+      max-width: ~'calc(100% - 30px)';
+    }
+    .social{
+      position: absolute;
+      bottom: 68px;
+      width: 100%;
+      white-space: nowrap;
+      a{
+        margin: 30px 8px;
+        color: @white;
+        background-color: #dfdfdf;
+        .hover_animation(all);
+        &:hover {
+          color: @grey;
+          background-color: #d4d4d4;
+          .hover_animation(all);
+        }
+      }
+    }
+  }
+}
+
+
+.menu-open{
+  width: 65%;
+  .hover_animation(width);
+}
+.window-shadow{
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100vh;
+  z-index: 4;
+  top: 0;
+  .hover_animation(background-color);
+}

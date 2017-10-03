@@ -1,0 +1,72 @@
+.content__table{
+  .table{
+    margin-bottom: 27px;
+  }
+  .green-more{
+    display: inherit;
+  }
+  thead{
+    height: 52px;
+    background-color: #eaeaea;
+    color:@lightgrey;
+    font-family: AcromLight;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 29px;
+  }
+  &.table-responsive{
+    @media screen and (max-width: 767px){
+      border: none;
+    }
+  }
+  .table-bordered{
+    @media screen and (max-width: 767px){
+      border: 1px solid #ddd;
+    }
+    &>tbody>tr>td,
+    &>thead>tr>th{
+      height: 51px;
+      border: 1px solid #eaeaea;
+      vertical-align: middle;
+      text-align: center;
+      @media screen and(max-width: 526px){
+        text-align: left;
+        width: 50%;
+        font-size: 16px;
+      }
+    }
+  }
+  .table-bordered>tbody>tr>td{
+    color: #8f8f8f;
+    font-size: 14px;
+  }
+  tbody tr td{
+    &:first-child{
+      text-align: left;
+      max-width: 217px;
+      padding-left: 9px;
+      @media screen and (max-width: 768px){
+        white-space: normal;
+      }
+      @media screen and(max-width: 526px){
+        font-family: AcromRegular;
+      }
+    }
+    &:last-child{
+      @media screen and(max-width: 526px){
+        text-align: center;
+      }
+    }
+  }
+
+  .icon-checked{
+    background: url(../image/table_check.png) no-repeat;
+    padding: 2px 10px;
+    background-position-y: -51px;
+  }
+  .icon-unchecked{
+    background: url(../image/table_check.png) no-repeat;
+    padding: 2px 10px;
+    background-position-y: 0;
+  }
+}
