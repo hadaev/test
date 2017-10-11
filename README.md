@@ -8,7 +8,10 @@ git init
 
 installation of the project
 ---------------------
-install node.js and npm
+install node.js and
+
+run the command in the terminal
+----------------------------
 
 npm install -g grunt-cli
 
