@@ -8,7 +8,7 @@ git init
 
 installation of the project
 ---------------------
-install node.js and
+install node.js and npm
 
 run the command in the terminal
 ----------------------------
